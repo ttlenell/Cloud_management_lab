@@ -19,7 +19,11 @@
 		F3BF4E83257A78C30090F7A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BF4E81257A78C30090F7A0 /* LaunchScreen.storyboard */; };
 		F3BF4E8E257A78C30090F7A0 /* Bulletin_BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF4E8D257A78C30090F7A0 /* Bulletin_BoardTests.swift */; };
 		F3BF4E99257A78C40090F7A0 /* Bulletin_BoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF4E98257A78C40090F7A0 /* Bulletin_BoardUITests.swift */; };
-		F3BF4EA7257A80A30090F7A0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF4EA6257A80A30090F7A0 /* Post.swift */; };
+		F3BF4EAB257E29570090F7A0 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF4EA9257E29570090F7A0 /* Post+CoreDataClass.swift */; };
+		F3BF4EAE257E2A4C0090F7A0 /* RealmPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF4EAD257E2A4C0090F7A0 /* RealmPost.swift */; };
+		F3BF4EB3257E43490090F7A0 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF4EB1257E43490090F7A0 /* PostTableViewCell.swift */; };
+		F3BF4EB4257E43490090F7A0 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BF4EB2257E43490090F7A0 /* PostTableViewCell.xib */; };
+		F3BF4EB8257E655F0090F7A0 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BF4EB7257E655F0090F7A0 /* Post+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +68,11 @@
 		F3BF4E94257A78C40090F7A0 /* Bulletin_BoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bulletin_BoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BF4E98257A78C40090F7A0 /* Bulletin_BoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulletin_BoardUITests.swift; sourceTree = "<group>"; };
 		F3BF4E9A257A78C40090F7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3BF4EA6257A80A30090F7A0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F3BF4EA9257E29570090F7A0 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Post+CoreDataClass.swift"; path = "/Users/tobiasclasson/Desktop/MAP19/GIT/Bulletin_Board/Bulletin_Board/Models/Post+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		F3BF4EAD257E2A4C0090F7A0 /* RealmPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPost.swift; sourceTree = "<group>"; };
+		F3BF4EB1257E43490090F7A0 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		F3BF4EB2257E43490090F7A0 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		F3BF4EB7257E655F0090F7A0 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Post+CoreDataProperties.swift"; path = "../../Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +151,7 @@
 		F3BF4E72257A78C10090F7A0 /* Bulletin_Board */ = {
 			isa = PBXGroup;
 			children = (
+				F3BF4EA8257E29400090F7A0 /* Models */,
 				F3BF4E73257A78C10090F7A0 /* AppDelegate.swift */,
 				F3BF4E75257A78C10090F7A0 /* SceneDelegate.swift */,
 				F3BF4E77257A78C10090F7A0 /* ViewController.swift */,
@@ -151,7 +160,8 @@
 				F3BF4E81257A78C30090F7A0 /* LaunchScreen.storyboard */,
 				F3BF4E84257A78C30090F7A0 /* Info.plist */,
 				F3BF4E7C257A78C10090F7A0 /* Bulletin_Board.xcdatamodeld */,
-				F3BF4EA6257A80A30090F7A0 /* Post.swift */,
+				F3BF4EB1257E43490090F7A0 /* PostTableViewCell.swift */,
+				F3BF4EB2257E43490090F7A0 /* PostTableViewCell.xib */,
 			);
 			path = Bulletin_Board;
 			sourceTree = "<group>";
@@ -172,6 +182,16 @@
 				F3BF4E9A257A78C40090F7A0 /* Info.plist */,
 			);
 			path = Bulletin_BoardUITests;
+			sourceTree = "<group>";
+		};
+		F3BF4EA8257E29400090F7A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3BF4EB7257E655F0090F7A0 /* Post+CoreDataProperties.swift */,
+				F3BF4EA9257E29570090F7A0 /* Post+CoreDataClass.swift */,
+				F3BF4EAD257E2A4C0090F7A0 /* RealmPost.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +306,7 @@
 				F3BF4E83257A78C30090F7A0 /* LaunchScreen.storyboard in Resources */,
 				F3BF4E80257A78C30090F7A0 /* Assets.xcassets in Resources */,
 				F3BF4E7B257A78C10090F7A0 /* Main.storyboard in Resources */,
+				F3BF4EB4257E43490090F7A0 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,10 +435,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3BF4E78257A78C10090F7A0 /* ViewController.swift in Sources */,
+				F3BF4EB8257E655F0090F7A0 /* Post+CoreDataProperties.swift in Sources */,
+				F3BF4EAB257E29570090F7A0 /* Post+CoreDataClass.swift in Sources */,
 				F3BF4E7E257A78C10090F7A0 /* Bulletin_Board.xcdatamodeld in Sources */,
+				F3BF4EB3257E43490090F7A0 /* PostTableViewCell.swift in Sources */,
 				F3BF4E74257A78C10090F7A0 /* AppDelegate.swift in Sources */,
+				F3BF4EAE257E2A4C0090F7A0 /* RealmPost.swift in Sources */,
 				F3BF4E76257A78C10090F7A0 /* SceneDelegate.swift in Sources */,
-				F3BF4EA7257A80A30090F7A0 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
